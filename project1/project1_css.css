@@ -1,0 +1,186 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Roboto;
+  font-size: 14px;
+  color: #353535;
+  background: #aa6300;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+header, section, article, div, footer {
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header */
+.header {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  min-height: 56px;
+  transition: min-height 0.3s;
+}
+
+.header__inner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__logo {
+  height: 72px;
+  margin-right: 1em;
+  margin-left: 1em;
+  vertical-align: top;
+  margin-top: 0.5em;
+}
+
+.header__title {
+  font-weight: 300;
+  font-size: 4em;
+  margin: 0.5em 0.25em;
+  display: inline-block;
+  color: #212121;
+}
+/* button code */
+.icon {
+  height: 30px;
+}
+
+.btn {
+  vertical-align: top;
+  float: right;
+  margin-top: 1.5em;
+  border: none;
+  cursor: pointer;
+  background-color: Transparent;
+}
+
+/* Footer */
+footer {
+ border-top: 1px solid #c68503;
+ text-align: center;
+ margin-bottom: 1em;
+ width: 100%;
+ color: #df9603;
+}
+
+/* bio */
+.bio {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  overflow: auto;
+  background: #c68503;
+  border-radius: 6px;
+}
+
+.bio__pic__box {
+  margin: 1em;
+}
+
+.bio__pic {
+  max-height: 300px;
+  border-radius: 6px;
+  max-width: 100%;
+}
+
+.bio__text {
+  margin: 1em;
+}
+
+/* gallery */
+.gallery {
+  border-radius: 6px;
+  background: #c68503;
+  overflow: auto;
+  margin-bottom: 1em;
+}
+
+.gallery__exhibit {
+  overflow: auto;
+}
+
+.gallery__pic__box {
+  margin: 1em;
+}
+
+.gallery__pic {
+  max-height: 500px;
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+
+.gallery__text {
+  margin: 1em;
+}
+
+.gallery__text__source {
+  font-style: italic;
+}
+
+/* widths */
+@media screen and (min-width: 599px) {
+  .bio__pic__box {
+    float: right;
+  }
+
+  .gallery__pic {
+    float: left;
+    max-width: 60%;
+  }
+
+  .header__logo {
+    margin-top: 2em;
+  }
+
+  .btn {
+    margin-top: 3em;
+  }
+
+  .icon {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header__logo {
+    height: 48px;
+    margin-right: 0.5em;
+  }
+
+  .header__title {
+    margin-left: 0;
+    font-size: 2em;
+    vertical-align: bottom;
+  }
+
+  .gallery__pic__box {
+    order:-1;
+  }
+
+  .gallery__text {
+    order:1;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  main, .header__inner {
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
